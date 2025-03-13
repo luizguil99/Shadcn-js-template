@@ -63,19 +63,6 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading tracking-tight;
-  }
-}
 
 @layer components {
   .container {
@@ -86,18 +73,6 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-  
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 animate-text-shimmer bg-[length:200%_auto];
-  }
-  
-  .glass {
-    @apply bg-white/80 backdrop-blur-md border border-white/20;
-  }
-  
-  .glass-dark {
-    @apply bg-black/60 backdrop-blur-md border border-white/10;
   }
   
   .hide-scrollbar::-webkit-scrollbar {
